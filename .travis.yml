@@ -102,10 +102,10 @@ script:
     
 after_success:
   - echo "[Push file]"
-  - git config --global user.email "lework@yeah.net"
-  - git config --global user.name "lework"
+  - git config --global user.email "kobeantinio@139.com"
+  - git config --global user.name "liyongan"
   - git remote rm origin
-  - sudo git remote add origin https://${GH_TOKEN}@github.com/lework/kainstall-offline.git > /dev/null 2>&1
+  - sudo git remote add origin https://${GH_TOKEN}@github.com/liyongan/kainstall-offline.git > /dev/null 2>&1
 #  - sudo git lfs track "*.tgz"
   - git add -A
   - git commit -m "[SKIP CI] Add kube ${KUBE_VERSION} version ${OS}${OS_VERSION} offline package"
